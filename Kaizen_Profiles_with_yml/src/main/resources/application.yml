@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: prod
+---
+
+spring:
+   profiles: dev
+   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/training
+    username: root
+
+---
+
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/training2
+    username: root
